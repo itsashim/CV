@@ -15,6 +15,7 @@
   font-size: 1.8rem;
   font-weight: 700;
   width: min(100%, 60ch);
+  line-height: 1.6;
 }
 
 .main .intro {
@@ -87,8 +88,10 @@
 .about .about_wrap .card {
   background-color: #222;
   padding: 2rem;
-  max-width: 900px;
-  width: 100%;
+  max-width: 1000px;
+  width: 50%;
+  margin: 2rem 0;
+  border-radius: 20px;
 }
 .about .about_wrap .card h4 {
   font-size: 1.8rem;
