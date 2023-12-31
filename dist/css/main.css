@@ -3,10 +3,23 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  font-size: 12px;
+}
+
+h1,
+h3,
+p {
+  color: #eee;
 }
 
 .sub_head {
   font-size: 4rem;
+  font-weight: 700;
+  color: #eee;
+}
+
+.sub_sub_head {
+  font-size: 3rem;
   font-weight: 700;
   color: #eee;
 }
@@ -18,35 +31,47 @@
   line-height: 1.6;
 }
 
-.main .intro {
-  background-color: #013870;
-  padding: 5rem;
+.contact_btn {
+  display: block;
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 100px;
+  width: 400px;
+  color: #eee;
+  background-color: #01e08f;
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: none;
 }
-.main .img_wrap {
+
+.header .intro {
+  background-color: #013870;
+  padding: 5rem 8%;
+}
+.header .img_wrap {
   width: 20rem;
   border-radius: 50%;
   border: 5px solid #eee;
   overflow: hidden;
 }
-.main .img_wrap img {
+.header .img_wrap img {
   width: 100%;
 }
-.main h1,
-.main h3,
-.main p {
+.header h1 {
   color: #eee;
   font-weight: 700;
-}
-.main h1 {
   font-size: 5rem;
 }
-.main h3 {
+.header h3 {
+  color: #eee;
+  font-weight: 700;
   font-size: 3rem;
 }
 
 .social_links {
   background-color: #01e08f;
-  padding: 3rem;
+  padding: 4rem;
+  padding-bottom: 8rem;
 }
 .social_links .wrap a {
   display: flex;
@@ -83,7 +108,7 @@
 
 .about {
   background-color: #013870;
-  padding: 3rem 5%;
+  padding: 5rem 8%;
 }
 .about .about_wrap .card {
   background-color: #222;
@@ -104,4 +129,48 @@
 }
 .about .about_wrap .card .para {
   font-size: 1.7rem;
+}
+.about .skills {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 5;
+  background-color: white;
+  padding: 2rem;
+}
+.about .skills .img_wrap {
+  width: 5rem;
+  margin-left: 1rem;
+}
+.about .skills .img_wrap img {
+  width: 100%;
+}
+.about .obj .img_wrap {
+  max-width: 35rem;
+}
+.about .obj .img_wrap img {
+  width: 100%;
+}
+.about .obj strong {
+  color: #01e08f;
+}
+
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 69px;
+  width: 69px;
+  pointer-events: none;
+}
+
+.cursor-circle {
+  --cursor-size: 40px;
+  border: 3px solid #eee;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  position: absolute;
+  top: calc(-1 * var(--cursor-size) / 2);
+  left: calc(-1 * var(--cursor-size) / 2);
 }/*# sourceMappingURL=main.css.map */
