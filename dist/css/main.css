@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.main {
+  background-color: #013870;
+  padding: 5rem;
+}
+
+.intro .img_wrap {
+  width: 20rem;
+  border-radius: 50%;
+  border: 5px solid #eee;
+  overflow: hidden;
+}
+.intro .img_wrap img {
+  width: 100%;
+}
+.intro h1,
+.intro h3,
+.intro p {
+  color: #eee;
+}
+.intro h1 {
+  font-size: 5rem;
+}
+.intro h3 {
+  font-size: 3rem;
+}
+
+.social_links {
+  background-color: #01e08f;
+}/*# sourceMappingURL=main.css.map */
