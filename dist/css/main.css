@@ -155,6 +155,16 @@ p {
   color: #01e08f;
 }
 
+.footer {
+  background-color: #222;
+  color: #eee;
+  margin: 0;
+  padding: 1rem;
+}
+.footer p {
+  font-size: 1.5rem;
+}
+
 .cursor {
   position: fixed;
   top: -20px;
@@ -298,4 +308,90 @@ p {
     bottom: 1080px;
     transform: translateX(-200px);
   }
+}
+.loader_wrap {
+  position: absolute;
+  top: 0;
+  background-color: #18506f;
+  width: 100%;
+  height: 100vh;
+  z-index: 999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader .banner {
+  position: relative;
+  padding: 10px 20px;
+  animation: loader 1s cubic-bezier(0.5, 0.1, 0.15, 1) alternate infinite;
+}
+@keyframes loader {
+  0% {
+    letter-spacing: -1px;
+  }
+  100% {
+    letter-spacing: 15px;
+  }
+}
+.loader .banner::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  transform: skewX(-15deg);
+  background-color: #eee;
+}
+.loader .banner-left,
+.loader .banner-right {
+  width: 60px;
+  height: 100%;
+  position: absolute;
+  z-index: -2;
+  bottom: -30%;
+  transform: skewX(-15deg);
+  background-color: #ccc;
+}
+.loader .banner-left {
+  animation: sub-banner-left 1s cubic-bezier(0.5, 0.1, 0.15, 1) alternate infinite;
+}
+@keyframes sub-banner-left {
+  0% {
+    right: 82%;
+  }
+  100% {
+    right: 90%;
+  }
+}
+.loader .banner-right {
+  animation: sub-banner-right 1s cubic-bezier(0.5, 0.1, 0.15, 1) alternate infinite;
+}
+@keyframes sub-banner-right {
+  0% {
+    left: 82%;
+  }
+  100% {
+    left: 90%;
+  }
+}
+.loader .banner-left::before,
+.loader .banner-right::before {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: -1px;
+  border: 22px solid;
+  border-color: transparent;
+}
+.loader .banner-left::before {
+  left: -1px;
+  border-left-color: #18506f;
+}
+.loader .banner-right::before {
+  right: -1px;
+  border-right-color: #18506f;
 }/*# sourceMappingURL=main.css.map */

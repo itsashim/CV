@@ -276,6 +276,9 @@
             </div>
           </div>
           <!-- skills End -->
+          <!-- Projects -->
+          <section class="projects"></section>
+          <!-- Projects End -->
           <!-- Contact me -->
           <a class="contact_btn mt-5" href="#contact">Contact Me</a>
           <!-- Contact End-->
@@ -283,6 +286,21 @@
       </section>
     </main>
 
+    <footer class="footer">
+      <p class="text-center mb-0">2024 Designed & maintained by Ashim Rai.</p>
+    </footer>
+
+    <!-- Loader -->
+    <div class="loader_wrap">
+      <div class="loader">
+        <div class="banner">
+          LOADING
+          <div class="banner-left"></div>
+          <div class="banner-right"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Loader end -->
     <!-- cursor -->
     <div class="cursor">
       <div class="cursor-circle"></div>
@@ -310,6 +328,15 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Loader -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var loader = document.querySelector(".loader_wrap");
+        loader.style.display = 'none';
+      });
+    </script>
+    <!-- Loader End -->
     <!-- Aos -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
