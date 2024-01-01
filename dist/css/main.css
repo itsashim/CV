@@ -36,7 +36,7 @@ p {
   text-align: center;
   padding: 1.5rem;
   border-radius: 100px;
-  width: 400px;
+  width: 300px;
   color: #eee;
   background-color: #01e08f;
   font-size: 2rem;
@@ -113,8 +113,8 @@ p {
 .about .about_wrap .card {
   background-color: #222;
   padding: 2rem;
-  max-width: 1000px;
-  width: 50%;
+  max-width: 800px;
+  width: 100%;
   margin: 2rem 0;
   border-radius: 20px;
 }
@@ -157,7 +157,7 @@ p {
 
 .cursor {
   position: fixed;
-  top: 0;
+  top: -20px;
   left: 0;
   height: 69px;
   width: 69px;
@@ -173,4 +173,16 @@ p {
   position: absolute;
   top: calc(-1 * var(--cursor-size) / 2);
   left: calc(-1 * var(--cursor-size) / 2);
+}
+
+@media (max-width: 600px) {
+  * {
+    font-size: 8px;
+  }
+  .header h1 {
+    font-size: 4rem;
+  }
+  .sub_head {
+    font-size: 3rem;
+  }
 }/*# sourceMappingURL=main.css.map */
